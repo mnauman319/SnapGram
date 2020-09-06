@@ -54,30 +54,6 @@ public class HomePageSteps {
 	public void types_in_a_valid(String arg1) throws Throwable {
 	    homePage.lookupUser.sendKeys(arg1);
 	}
-//	@Then("^\"([^\"]*)\" photos should appear$")
-//	public void photos_should_appear(String arg1) throws Throwable {
-//		Thread.sleep(500);
-//	    List<WebElement> cardTitles = driver.findElements(By.id("card-title"));
-//	    Thread.sleep(500);
-//	    User user = this.uServ.getUserByUsername(arg1);
-//	    Thread.sleep(500);
-//	    System.out.println(user);
-//	    Set<Photo> photos = user.getPhotos();
-//	    boolean photoInView = false;
-//	    for(WebElement cardTitle : cardTitles) {
-//	    	photoInView = false;
-//	    	for(Photo photo : photos) {
-//	    		if(photo.getPhotoName() == cardTitle.getText()) {
-//	    			photoInView =true;
-//	    		}
-//	    	}
-//	    	if(!photoInView) {
-//	    		break;
-//	    	}
-//	    }
-//	    Assert.assertEquals(true, photoInView);
-//	}
-	
 
 	@Then("^the add photo button should not be present$")
 	public void the_add_photo_button_should_not_be_present() throws Throwable {
