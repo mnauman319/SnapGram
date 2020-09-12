@@ -19,6 +19,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.stereotype.Component;
 
 import com.google.common.hash.Hashing;
+import com.mysql.cj.jdbc.Driver;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -41,7 +42,6 @@ public class HomePageSteps {
 	public static AddPhotoPage addPhotoPage = SnapGramRunner.addPhotoPage;
 	public static WebDriver driver = SnapGramRunner.driver;
 	public static WebDriverWait wait = new WebDriverWait(driver, 4);
-	
 	@Autowired
 	UserService uServ;
 	

@@ -30,7 +30,7 @@ public class UserController {
 	@Autowired
 	UserService uServ;
 	
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	@RequestMapping(value = "/loginUser", method = RequestMethod.POST)
 	@ResponseBody
 	public User loginUser(@RequestBody LoginDTO dto, HttpServletResponse httpServletResponse) throws InvalidLoginException, IOException {
 		User user = this.uServ.getUserByLogin(dto.getUsername(), dto.getPassword());
